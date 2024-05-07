@@ -42,4 +42,25 @@ source('GSmCCNet_one.R')
 source('SCCAdiagTools.R')
 ```
 
-All data used in the analysis are controlled-access data that restricts the public access. If the user is interested in running single-omics SmCCNet, please refer to the SmCCNet package: [GitHub](https://github.com/KechrisLab/SmCCNet)
+All data used in the analysis are controlled-access data that restricts the public access. If the user is interested in running single-omics SmCCNet, please refer to the SmCCNet package available in our [GitHub](https://github.com/KechrisLab/SmCCNet) repository. The package compiles all source codes and functions into an end-to-end pipeline with example data to run through. Below is the example implementation:
+
+
+``` r
+library(SmCCNet)
+set.seed(123)
+data("ExampleData")
+Y_binary <- ifelse(Y > quantile(Y, 0.5), 1, 0)
+# single-omics with binary phenotype
+result <- fastAutoSmCCNet(X = list(X1), Y = as.factor(Y_binary), 
+                          Kfold = 3, 
+                          subSampNum = 100, DataType = c('Gene'),
+                          saving_dir = getwd(), EvalMethod = 'auc', 
+                          summarization = 'NetSHy', 
+                          CutHeight = 1 - 0.1^10, ncomp_pls = 5)
+# single-omics with quantitative phenotype
+result <- fastAutoSmCCNet(X = list(X1), Y = Y, Kfold = 3, 
+                          preprocess = FALSE,
+                          subSampNum = 50, DataType = c('Gene'),
+                          saving_dir = getwd(), summarization = 'NetSHy',
+                          CutHeight = 1 - 0.1^10)
+```
