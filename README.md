@@ -1,4 +1,11 @@
+# SmCCNet: A Comprehensive Tool for Multi-Omics Network Inference
+
+
 **Note:** If you use SmCCNet in published research or refer to the result in protein network paper, please cite:
+
+> Konigsberg, I. R., Vu, T., Liu, W., Litkowski, E. M., Pratte, K. A., Vargas, L. B., ... & Kechris, K. (2024). 
+> Proteomic Networks and Related Genetic Variants Associated with Smoking and Chronic Obstructive Pulmonary Disease.
+> medRxiv, 2024-02.
 
 > Liu, W., Vu, T., Konigsberg, I., Pratte, K., Zhuang, Y., & Kechris, K. (2023). 
 > SmCCNet 2.0: A Comprehensive Tool for Multi-omics Network Inference with Shiny Visualization. 
