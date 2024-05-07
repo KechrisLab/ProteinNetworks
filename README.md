@@ -41,3 +41,5 @@ Before running the SmCCNet analysis script, all source functions need to be impo
 source('GSmCCNet_one.R')
 source('SCCAdiagTools.R')
 ```
+
+All data used in the analysis are controlled-access data that restricts the public access. If the user is interested in running single-omics SmCCNet, please refer to the SmCCNet package: [GitHub](https://github.com/KechrisLab/SmCCNet)
