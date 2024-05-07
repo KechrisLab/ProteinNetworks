@@ -22,7 +22,7 @@ If you use SmCCNet in published research, please cite:
 
 This repository contains the R code for Koningsberg et al., Proteomic Networks and Related Genetic Variants Associated with Smoking and Chronic Obstructive Pulmonary Disease (submitted).
 
-Two folders contains the source code and analysis code: 
+Two folders contain the source code and analysis code: 
 
 - NetworkExtractCode: Analysis R script of extracting proteomics networks using SmCCNet for each combination of phenotype & cohort.
   - soma_adjusted_aa_fev1.R: SmCCNet pipeline analysis script with the phenotype of FEV1 within the African American cohort.
@@ -32,3 +32,12 @@ Two folders contains the source code and analysis code:
   - soma_adjusted_aa_smoking.R: SmCCNet pipeline analysis script with the phenotype of smoking status (1 yes, 0 no) within the African American cohort.
   - soma_adjusted_nhw_smoking.R: SmCCNet pipeline analysis script with the phenotype of smoking status (1 yes, 0 no) within the Non-Hispanic White cohort.
 - SourceFunction: SmCCNet pipeline source functions. All the source R functions are required to be imported before running the analysis R script.
+  - GSmCCNet_one.R: All necessary SmCCNet pipeline functions to run through the SmCCNet pipeline.
+  - SCCAdiagTools.R: SmCCNet diagnosis function to assess the performance of SmCCNet algorithm.
+ 
+Before running the SmCCNet analysis script, all source functions need to be imported by using 
+
+```r
+source('GSmCCNet_one.R')
+source('SCCAdiagTools.R')
+```
