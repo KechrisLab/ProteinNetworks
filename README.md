@@ -22,4 +22,7 @@ If you use SmCCNet in published research, please cite:
 
 This repository contains the R code for Koningsberg et al., Proteomic Networks and Related Genetic Variants Associated with Smoking and Chronic Obstructive Pulmonary Disease (submitted).
 
+There are two folders that contains the source code and analysis code: 
 
+- NetworkExtractCode: Analysis R script of extracting proteomics networks using SmCCNet for each combination of phenotype & cohort.
+- SourceFunction: SmCCNet pipeline source functions. All the source R functions are required to be imported before running the analysis R script.
