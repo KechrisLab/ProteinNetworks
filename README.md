@@ -64,3 +64,9 @@ result <- fastAutoSmCCNet(X = list(X1), Y = Y, Kfold = 3,
                           saving_dir = getwd(), summarization = 'NetSHy',
                           CutHeight = 1 - 0.1^10)
 ```
+
+for more questions about
+the code implementation, please contact Dr. Katerina
+Kechris (katerina.kechris@cuanschutz.edu) or Weixuan
+Liu (weixuan.liu@cuanschutz.edu). For more questions about the result presented in the manuscript,
+please contact Dr. Thao Vu (thao.3.vu@cuanschutz.edu) and Dr. Iain Konigsberg (iain.konigsberg@cuanschutz.edu).
